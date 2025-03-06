@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aviation Photography by Luke Ayers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">Aviation Photography by Luke Ayers</header>
+ 
+    <main class="gallery">
+         <!-- Southwest Airlines -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>Southwest Airlines</h2>
+            <div class="gallery-content"> 
+                <img src="images/image1.jpg" onclick="openModal(this)" alt="Southwest Image 1">
+                <img src="images/image2.jpg" onclick="openModal(this)" alt="Southwest Image 2">
+                <img src="images/image11.jpg" onclick="openModal(this)" alt="Southwest Image 3">
+                <img src="images/image21.jpg" onclick="openModal(this)" alt="Southwest Image 4">
+                <img src="images/image22.jpg" onclick="openModal(this)" alt="Southwest Image 5">
+            </div>
+        </div>    
+
+         <!-- United Airlines -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>United Airlines</h2>
+            <div class="gallery-content">
+                <img src="images/image3.jpg" onclick="openModal(this)" alt="United Image 1">
+                <img src="images/image4.jpg" onclick="openModal(this)" alt="United Image 2">
+                <img src="images/image23.jpg " onclick="openModal(this)" alt="United Image 3">
+                <img src="images/image24.jpg " onclick="openModal(this)" alt="United Image 4">
+                <img src="images/image25.jpg " onclick="openModal(this)" alt="United Image 5">
+            </div>
+        </div>
+
+         <!-- U.S. Military -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>U.S. Military</h2>
+            <div class="gallery-content"> 
+                <img src="images/image5.jpg" onclick="openModal(this)" alt="U.S. Military Image 1">
+                <img src="images/image6.jpg" onclick="openModal(this)" alt="U.S. Military Image 2">
+                <img src="images/image7.jpg" onclick="openModal(this)" alt="U.S. Military Image 3">
+                <img src="images/image8.jpg" onclick="openModal(this)" alt="U.S. Military Image 4">
+                <img src="images/image10.jpg" onclick="openModal(this)" alt="U.S. Military Image 5">
+            </div>
+        </div>
+
+         <!-- American Airlines -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>American Airlines</h2>
+            <div class="gallery-content"> 
+                <img src="images/image9.jpg" onclick="openModal(this)" alt="American Image 1">
+                <img src="images/image17.jpg" onclick="openModal(this)" alt="American Image 2">
+                <img src="images/image18.jpg" onclick="openModal(this)" alt="American Image 3">
+                <img src="images/image19.jpg" onclick="openModal(this)" alt="American Image 4">
+                <img src="images/image20.jpg" onclick="openModal(this)" alt="American Image 5">
+    
+            </div>
+        </div> 
+
+         <!-- Alaska Airlines -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>Alaska Airlines</h2>
+            <div class="gallery-content"> 
+                <img src="images/image12.jpg" onclick="openModal(this)" alt="Alaska Image 1">
+                <img src="images/image13.jpg" onclick="openModal(this)" alt="Alaska Image 2">
+                <img src="images/image14.jpg" onclick="openModal(this)" alt="Alaska Image 3">
+                <img src="images/image15.jpg" onclick="openModal(this)" alt="Alaska Image 4">
+                <img src="images/image16.jpg" onclick="openModal(this)" alt="Alaska Image 5">
+            </div>
+        </div> 
+
+        <!-- UPS -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>UPS</h2>
+            <div class="gallery-content"> 
+                <img src="images/image26.jpg" onclick="openModal(this)" alt="UPS Image 1">
+                <img src="images/image27.jpg" onclick="openModal(this)" alt="UPS Image 2">
+                <img src="images/image28.jpg" onclick="openModal(this)" alt="UPS Image 3">
+                <img src="images/image29.jpg" onclick="openModal(this)" alt="UPS Image 4">
+                <img src="images/image30.jpg" onclick="openModal(this)" alt="UPS Image 5">
+                
+            </div>
+        </div>  
+
+        
+        <!-- FedEx Express -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>FedEx Express</h2>
+            <div class="gallery-content"> 
+                <img src="images/image31.jpg" onclick="openModal(this)" alt="FedEx Image 1">
+                <img src="images/image32.jpg" onclick="openModal(this)" alt="FedEx Image 2"> 
+                <img src="images/image33.jpg" onclick="openModal(this)" alt="FedEx Image 3">
+                <img src="images/image34.jpg" onclick="openModal(this)" alt="FedEx Image 4">
+                <img src="images/image35.jpg" onclick="openModal(this)" alt="FedEx Image 5">
+            </div>
+        </div>  
+
+        <!-- National Airlines -->
+        <div class="category" onclick="toggleGallery(this)">
+            <h2>National Airlines</h2>
+            <div class="gallery-content"> 
+                <img src="images/image36.jpg" onclick="openModal(this)" alt="National Image 1">
+                <img src="images/image37.jpg" onclick="openModal(this)" alt="National Image 2">
+                <img src="images/image38.jpg" onclick="openModal(this)" alt="National Image 3">
+                <img src="images/image39.jpg" onclick="openModal(this)" alt="National Image 4">
+                <img src="images/image40.jpg" onclick="openModal(this)" alt="National Image 5">
+                
+            </div>
+        </div>  
+
+        <!-- Modal for Image -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" height= 1280px; alt="Expanded Image"> 
+            <div id="caption"></div>
+        </div>
+
+        <!-- Section for My Story -->
+<section id="my-story">
+    <h2>My Story</h2>
+    <p>
+      On Christmas in 2019, I was gifted a Canon DSLR, sparking a newfound passion for photography. Soon after, I began taking pictures of planes approaching San Antonio International Airport (SAT), from the comfort of my front yard, taking inspiration from an older friend of mine who had already been planespotting for some time. 
+    
+      My curiosity and excitement grew, so on December 31, 2019, I took my passion further and went planespotting in San Diego for the first time.
+   
+      As the pandemic took hold in 2020, I found myself with more free time and dove deeper into planespotting. It was during this period that I was recruited by Airways Magazine in September to join their team of photographers. My dedication paid off, and in 2021, I saw my work published for the first time, marking a significant milestone in my planespotting journey.
+    
+      As I continued further down my path as an aviation photographer, I always wanted to improve and do more. At first I had to rely on my parents for transportation to and from my local airport in San Antonio, but eventually, in December of 2021, almost exactly 2 years after my first time planespotting, I finally got my license.
+    
+      At this point I took every chance possible to collect more photos of different aircraft or airlines I had yet to capture. 
+    
+      More time passed, and I started to upgrade my gear, and this process will always be ongoing. Like most photographers and artists, I always strive to improve the quality of my work, and this was just another step in doing so. 
+    </p>
+
+
+    <h2>Why Airplanes?</h2>
+    <p> 
+    Ever since I started this hobby, I've had some people who think it's a weird or nerdy hobby, but it is a surprisingly large community, spanning countless platforms such as Instagram, Twitter, TikTok, Flickr, YouTube, and many more. Not only that, but there are many websites or databases full of images from photographers around the world. 
+
+    Websites like JetPhotos have been around 2002, with over 4 million screened photos now available online for anyone to view. These websites provide all details of an aircraft, including registration, serial number, photo location, and much more. 
+
+    The reason I enjoy this specific type of photography so much is for many reasons. There are so many different airlines and aircraft types out there, leaving countless combinations for us planespotters to capture through our lens. Getting up close and personal with these aircraft has always been fun for me, trying to perfect every shot just sharp enough to see all the 
+    intricate details of an aircraft. 
+
+    Most of all though, is collecting images of rare aircraft or special liveries. For example, Southwest Airlines has a special paint scheme for many different state flags including Texas, California, Nevada, Tennessee, Colorado, Arizona, and more! 
+
+    As you can see by just a select gallery of images I have collected, there are many different aircraft for us planespotters to capture, and no single photographer can ever capture them all. 
+
+
+    </p>
+  </section>
+  
+
+        <!-- Form -->
+         <div class="center-form">
+            <h2>Contact Me</h2>
+                 <form action="#" method="post">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p> Find me on other platforms: </p> 
+        <a href="https://www.instagram.com/texas.jets" target="_blank">Instagram</a> | <a href="https://www.jetphotos.com/photographer/229084" target="_blank">Jetphotos</a> | <a href="https://www.flickr.com/photos/189720764@N06/" target="_blank">Flickr</a>
+        <p>All Photos by Luke Ayers © 2019-2025 <p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
